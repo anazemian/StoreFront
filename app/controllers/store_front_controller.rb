@@ -1,5 +1,6 @@
 class StoreFrontController < ApplicationController
   def index
+    
   end
 
   def login

@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.feature "Descriptions", type: :feature do
-  pending "add some scenarios (or delete) #{__FILE__}"
+  describe "as a user I can click an item and see a description" do
+    it "should go to a description page when I click on item" do
+      visit '/'
+      click_link('item1')
+      expect(current_path).to eq('/store_front/view_item')
+
+    end
+
+  end
 end
