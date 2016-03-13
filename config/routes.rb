@@ -5,7 +5,11 @@ Rails.application.routes.draw do
 
   get 'store_front/cart'
 
-  get 'store_front/view_item'
+  get 'store_front/view_item_1'
+
+  get 'store_front/view_item_2'
+
+  get 'store_front/view_item_3'
 
   get 'store_front/payment'
 

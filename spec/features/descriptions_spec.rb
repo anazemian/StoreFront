@@ -5,9 +5,15 @@ RSpec.feature "Descriptions", type: :feature do
     it "should go to a description page when I click on item" do
       visit '/'
       click_link('item1')
-      expect(current_path).to eq('/store_front/view_item')
-
+      expect(current_path).to eq('/store_front/view_item_1')
     end
+
+    it "should have a description" do
+      visit '/store_front/view_item_2'
+      expect(page).to have_content "This is dog food."
+    end
+
+
 
   end
 end

@@ -23,9 +23,23 @@ RSpec.describe StoreFrontController, type: :controller do
     end
   end
 
-  describe "GET #view_item" do
+  describe "GET #view_item_1" do
     it "returns http success" do
-      get :view_item
+      get :view_item_1
+      expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe "GET #view_item_2" do
+    it "returns http success" do
+      get :view_item_2
+      expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe "GET #view_item_3" do
+    it "returns http success" do
+      get :view_item_3
       expect(response).to have_http_status(:success)
     end
   end

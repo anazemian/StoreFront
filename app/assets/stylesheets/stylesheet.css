@@ -1,4 +1,23 @@
-#picture1{
-  height: 125px;
-  width: 125px;
+.col-sm-4{
+  border: 2px solid black;
+}
+
+.row1photos{
+  height: 155px;
+  width: 225px;
+  padding-left: 10%;
+}
+
+.carousel-inner{
+  /*min-width: auto;
+  min-height:300px;
+  margin: auto;*/
+  background-size: cover;
+  background-position: center center;
+}
+
+.item > img {
+  min-width: auto;
+  min-height:200px;
+  margin: auto;
 }
