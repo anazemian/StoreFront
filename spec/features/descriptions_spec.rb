@@ -10,8 +10,9 @@ RSpec.feature "Descriptions", type: :feature do
 
     it "should have a description" do
       visit '/store_front/view_item_2'
-      expect(page).to have_content "This is dog food."
+      expect(page).to have_content "Pedigree Dog Food"
     end
+
 
 
 
